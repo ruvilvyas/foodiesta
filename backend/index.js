@@ -7,7 +7,7 @@ const port = 5000;
 
 // ✅ Secure CORS Configuration
 const corsOptions = {
-    origin: "http://localhost:3000",  // ✅ Allow frontend requests
+    origin: ['http://localhost:3000', 'https://foodiesta.vercel.app'],  // ✅ Allow frontend requests
     methods: "GET, POST, PUT, DELETE",
     allowedHeaders: ["Content-Type", "Authorization", "auth-token"] };
 app.use(cors(corsOptions));
